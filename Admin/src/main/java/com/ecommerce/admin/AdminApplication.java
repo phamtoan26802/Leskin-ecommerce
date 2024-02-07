@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
-@SpringBootApplication(scanBasePackages = "com.ecommerce.product.*")
+@SpringBootApplication(scanBasePackages = {"com.ecommerce.product.*", "com.ecommerce.admin.*"})
 @EnableJpaRepositories(value = "com.ecommerce.product.repository")
 @EntityScan(value = "com.ecommerce.product.model")
 public class AdminApplication {
