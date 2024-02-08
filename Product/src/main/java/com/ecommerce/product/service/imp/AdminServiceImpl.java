@@ -5,8 +5,8 @@ import com.ecommerce.product.model.Admin;
 import com.ecommerce.product.repository.AdminRepository;
 import com.ecommerce.product.repository.RoleRepository;
 import com.ecommerce.product.service.AdminService;
-import jakarta.validation.constraints.Size;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.Arrays;

@@ -1,6 +1,5 @@
 package com.ecommerce.product.dto;
 
-import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
 import jakarta.validation.constraints.Size;
 import lombok.AllArgsConstructor;
