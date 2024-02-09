@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="https://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
+<html lang="en" xmlns:th="https://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html" xmlns:layout="">
 
 <head>
 
@@ -36,8 +36,17 @@
                             <div class="text-center">
                                 <h1 class="h4 text-gray-900 mb-4">Create an Account!</h1>
                             </div>
-                            <div th:if="${session.message}">
-                                <p class="alert alert-danger" th:text="${session.message}"></p>
+                            <div th:if="${emailError}">
+                                <p class="alert alert-danger" th:text="${emailError}"></p>
+                            </div>
+                            <div th:if="${passwordError}">
+                                <p class="alert alert-danger" th:text="${passwordError}"></p>
+                            </div>
+                            <div th:if="${errors}">
+                                <p class="alert alert-danger" th:text="${errors}"></p>
+                            </div>
+                            <div th:if="${success}">
+                                <p class="alert alert-success" th:text="${success}"></p>
                             </div>
                             <form th:action="@{/register-new}" th:object="${adminDto}" method="POST">
                                 <div class="form-group row">
@@ -93,15 +102,7 @@
 
     </div>
 
-    <!-- Bootstrap core JavaScript-->
-    <script th:src="@{vendor/jquery/jquery.min.js}"></script>
-    <script th:src="@{vendor/bootstrap/js/bootstrap.bundle.min.js}"></script>
-
-    <!-- Core plugin JavaScript-->
-    <script th:src="@{vendor/jquery-easing/jquery.easing.min.js}"></script>
-
-    <!-- Custom scripts for all pages-->
-    <script th:src="@{js/sb-admin-2.min.js}"></script>
+    <th:block layout:fragments = "script"></th:block>
 
 </body>
 
