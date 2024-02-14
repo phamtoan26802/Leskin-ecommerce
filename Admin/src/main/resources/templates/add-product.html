@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Product</title>
+    <title>Add Product</title>
 
     <!-- Custom fonts for this template-->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -42,7 +42,7 @@
             <!--End of Top bar -->
 
             <!--Begin Page Content-->
-            <div class="container-fluid">
+            <div style="margin-left: 110px" class="container-fluid">
                 <form class="form-horizontal" th:action="@{/save-product}" method="POST" enctype="multipart/form-data" th:object="${product}">
                     <fieldset>
                         <legend>Add Product</legend>

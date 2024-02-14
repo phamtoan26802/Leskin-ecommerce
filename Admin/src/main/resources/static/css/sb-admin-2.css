@@ -7910,6 +7910,7 @@ button.bg-dark:focus {
 }
 
 .p-5 {
+  background:url("../images/bg-sg.jpg");
   padding: 3rem !important;
 }
 

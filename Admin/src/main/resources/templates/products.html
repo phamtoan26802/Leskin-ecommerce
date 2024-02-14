@@ -53,7 +53,7 @@
                     <p th:text="${error}"></p>
                 </div>
                 <a th:href="@{/add-product}" class="btn btn-primary">Add new product</a>
-                <table class="table" th:if="${size > 0}">
+                <table style="margin-top: 10px" class="table" th:if="${size > 0}">
                     <thead>
                     <tr>
                         <th scope="col">Name</th>
@@ -73,7 +73,10 @@
                         <td th:text="${product.currentQuantity}"></td>
                         <td><img src="" style="height: 40px; width: 40px" th:src="*{'data:image/jpeg;base64,' + {product.image}}"></td>
                         <td><a th:href="@{/update-product/{id} (id = ${product.id})}" class="btn btn-primary">Update</a></td>
-                        <td></td>
+                        <td>
+                            <a th:if="${product.activated == false}" th:href="@{/enable-product/{id} (id = ${product.id})}" class="btn btn-warning">Enable</a>
+                            <a th:if="${product.deleted == false}" th:href="@{/delete-product/{id} (id = ${product.id})}" class="btn badge-danger">Delete</a>
+                        </td>
                     </tr>
                     </tbody>
                 </table>

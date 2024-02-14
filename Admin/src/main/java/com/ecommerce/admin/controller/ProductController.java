@@ -85,5 +85,27 @@ public class ProductController {
         }
         return "redirect:/products";
     }
+    @RequestMapping(value = "/enable-product/{id}", method = {RequestMethod.PUT, RequestMethod.GET})
+    public String enabledProduct(@PathVariable("id") Long id, RedirectAttributes attributes){
+        try {
+            productService.enableById(id);
+            attributes.addFlashAttribute("success", "Enabled successfully!");
+        }catch (Exception e){
+            e.printStackTrace();
+            attributes.addFlashAttribute("error", "Failed to enabled!");
+        }
+        return "redirect:/products";
+    }
 
+    @RequestMapping(value = "/delete-product/{id}", method = {RequestMethod.PUT, RequestMethod.GET})
+    public String deleteProduct(@PathVariable("id") Long id, RedirectAttributes attributes){
+        try {
+            productService.deleteById(id);
+            attributes.addFlashAttribute("success", "Delete successfully!");
+        }catch (Exception e){
+            e.printStackTrace();
+            attributes.addFlashAttribute("error", "Failed to deleted!");
+        }
+        return "redirect:/products";
+    }
 }

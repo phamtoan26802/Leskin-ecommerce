@@ -73,10 +73,8 @@ public class ProductServiceImpl implements ProductService {
                 product.setImage(product.getImage());
             }else{
                 if(imageUpload.checkExisted(imageProduct) == false){
-                    System.out.println("Upload to folder");
-                    //imageUpload.uploadImage(imageProduct);
+                    imageUpload.uploadImage(imageProduct);
                 }
-                System.out.println("Image existed");
                 product.setImage(Base64.getEncoder().encodeToString(imageProduct.getBytes()));
             }
             product.setName(productDto.getName());
@@ -85,8 +83,7 @@ public class ProductServiceImpl implements ProductService {
             product.setCostPrice(productDto.getCostPrice());
             product.setCurrentQuantity(productDto.getCurrentQuantity());
             product.setCategory(productDto.getCategory());
-            return product;
-            //return productRepository.save(product);
+            return productRepository.save(product);
         }catch (Exception e){
             e.printStackTrace();
         }
@@ -112,11 +109,17 @@ public class ProductServiceImpl implements ProductService {
 
     @Override
     public void deleteById(Long id) {
-
+        Product product = productRepository.getById(id);
+        product.set_deleted(true);
+        product.set_activated(false);
+        productRepository.save(product);
     }
 
     @Override
     public void enableById(Long id) {
-
+        Product product = productRepository.getById(id);
+        product.set_activated(true);
+        product.set_deleted(false);
+        productRepository.save(product);
     }
 }
