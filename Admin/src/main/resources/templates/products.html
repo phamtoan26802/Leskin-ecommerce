@@ -42,7 +42,42 @@
             <!--End of Top bar -->
 
             <!--Begin Page Content-->
-            <div class="container-fluid"></div>
+            <div class="container-fluid">
+                <div th:if="${size == 0}">
+                    <p>No products in shop</p>
+                </div>
+                <div th:if="${success}" class="text-center alert alert-success">
+                    <p th:text="${success}"></p>
+                </div>
+                <div th:if="${error}" class="text-center alert alert-danger">
+                    <p th:text="${error}"></p>
+                </div>
+                <a th:href="@{/add-product}" class="btn btn-primary">Add new product</a>
+                <table class="table" th:if="${size > 0}">
+                    <thead>
+                    <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Category</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Quantity</th>
+                        <th scope="col">Image</th>
+                        <th scope="col">Update</th>
+                        <th scope="col">Action</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr th:each="product : ${products}">
+                        <th scope="row" th:text="${product.name}"></th>
+                        <td th:text="${product.category.name}"></td>
+                        <td th:text="${product.costPrice}"></td>
+                        <td th:text="${product.currentQuantity}"></td>
+                        <td><img src="" style="height: 40px; width: 40px" th:src="*{'data:image/jpeg;base64,' + {product.image}}"></td>
+                        <td><a th:href="@{/update-product/{id} (id = ${product.id})}" class="btn btn-primary">Update</a></td>
+                        <td></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
         <!-- End of Main Content -->
         </div>
         <!-- Footer -->
