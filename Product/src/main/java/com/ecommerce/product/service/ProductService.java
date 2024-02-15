@@ -2,8 +2,9 @@ package com.ecommerce.product.service;
 
 import com.ecommerce.product.dto.ProductDto;
 import com.ecommerce.product.model.Product;
+import org.springframework.data.domain.Pageable;
 import org.springframework.web.multipart.MultipartFile;
-
+import org.springframework.data.domain.Page;
 import java.util.List;
 
 public interface ProductService {
@@ -13,5 +14,7 @@ public interface ProductService {
     void deleteById(Long id);
     void enableById(Long id);
     ProductDto getById(Long id);
+    Page<Product> pageProducts(int pageNo);
+    Page<Product> searchProducts(int pageNo, String keyword);
 
 }
