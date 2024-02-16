@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style/Sale.css">
+    <title>Sale</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="myNavbar">
+        <a class="navbar-brand" href="#"><img src="../images/logo.png" alt="logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="search-bar">
+            <input class="form-control" type="text" placeholder="Tìm kiếm...">
+            <button type="submit"></button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item ">
+                    <a class="nav-link" href="./Home.html"><img style="margin-left: 1.5rem;" src="../images/stick-1.png"
+                            alt="Trang chủ"><br>
+                        Trang chủ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img style="margin-left: 1.5rem;" src="../images/stick-2.png"
+                            alt="Giới thiệu"><br>
+                        Giới thiệu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./Sale.html"><img style="margin-left: 1rem;" src="../images/stick-3.png"
+                            alt="Ưu đãi"><br>
+                        Ưu đãi</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./News.html"><img style="margin-left: 1rem;" src="../images/stick-4.png"
+                            alt="Tin tức"><br>
+                        Tin tức</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./Contact.html"><img style="margin-left: 1rem;"
+                            src="../images/stick-5.png" alt="Liên hệ"><br>
+                        Liên hệ</a>
+                </li>
+            </ul>
+            <button id="loginButton" style="color: white;margin-right: 5px;" class="btn btn-warning my-2 my-sm-0 ml-2"
+                type="submit"><strong>Đăng
+                    nhập</strong></button>
+            <button class="btn btn-outline-warning my-2 my-sm-0 ml-2" type="submit"><strong>Đăng ký</strong></button>
+        </div>
+    </nav>
+    <div style="padding-top: 90px; margin-bottom: 10px;" class="slider">
+        <div class="container-fluid">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../images/banner.jpg" class="d-block w-100" alt="./images/banner.jpg">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../images/banner.jpg" class="d-block w-100" alt="./images/banner.jpg">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../images/banner.jpg" class="d-block w-100" alt="./images/banner.jpg">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <a style="text-decoration: none;color: black;" href="./Home.html">Trang chủ <span>> Tin tức</span></a>
+    </div>
+    <div class="container">
+        <h2 style="text-transform: uppercase;padding: 5px;">Sản phẩm và dịch vụ</h2>
+    </div>
+    <div class="container-fluid" style="padding-top: 15px;">
+        <div class="container">
+            <div class="image-grid">
+                <div class="image-item">
+                    <a href="#" target="_blank">
+                        <img src="../images/brand-1.jpg" alt="adayroil.com">
+                    </a>
+                    <div class="circle-image">
+                        <a href=""><img src="../images/icon/brand-1.png" alt=""></a>
+                    </div>
+                    <div class="card-info" style="padding-top: 3rem;">
+                        <div class="desc">
+                            <h3>
+                                <span>Xóa Nhăn Vùng Mắt, Trán, Cau Mày, Khóe Miệng 1 Lần Duy Nhất...</span>
+                            </h3>
+                            <div class="bot">
+                                <div class="date">
+                                    <span>05/07/19 - 31/08/19</span>
+                                </div>
+                                <div class="btn-more">
+                                    <span>Xem thêm > <i class="fa fa-angle-right" aria-hidden="true"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-item">
+                    <a href="#" target="_blank">
+                        <img src="../images/brand-2.jpg" alt="SHISEIDO">
+                    </a>
+                    <div class="circle-image">
+                        <a href=""><img src="../images/icon/brand-2.png" alt=""></a>
+                    </div>
+                    <div class="card-info" style="padding-top: 3rem;">
+                        <div class="desc">
+                            <h3>
+                                <span>Xóa Nhăn Vùng Mắt, Trán, Cau Mày, Khóe Miệng 1 Lần Duy Nhất...</span>
+                            </h3>
+                            <div class="bot">
+                                <div class="date">
+                                    <span>05/07/19 - 31/08/19</span>
+                                </div>
+                                <div class="btn-more">
+                                    <span>Xem thêm > <i class="fa fa-angle-right" aria-hidden="true"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-item">
+                    <a href="#" target="_blank">
+                        <img src="../images/brand-3.jpg" alt="NYX PROFESSIONAL MAKEUP">
+                    </a>
+                    <div class="circle-image">
+                        <a href=""><img src="../images/icon/brand-3.png" alt=""></a>
+                    </div>
+                    <div class="card-info" style="padding-top: 3rem;">
+                        <div class="desc">
+                            <h3>
+                                <span>Xóa Nhăn Vùng Mắt, Trán, Cau Mày, Khóe Miệng 1 Lần Duy Nhất...</span>
+                            </h3>
+                            <div class="bot">
+                                <div class="date">
+                                    <span>05/07/19 - 31/08/19</span>
+                                </div>
+                                <div class="btn-more">
+                                    <span>Xem thêm > <i class="fa fa-angle-right" aria-hidden="true"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-item">
+                    <a href="#" target="_blank">
+                        <img src="../images/brand-4.jpg" alt="SHISEIDO">
+                    </a>
+                    <div class="circle-image">
+                        <a href=""><img src="../images/icon/brand-1.png" alt=""></a>
+                    </div>
+                    <div class="card-info" style="padding-top: 3rem;">
+                        <div class="desc">
+                            <h3>
+                                <span>Xóa Nhăn Vùng Mắt, Trán, Cau Mày, Khóe Miệng 1 Lần Duy Nhất...</span>
+                            </h3>
+                            <div class="bot">
+                                <div class="date">
+                                    <span>05/07/19 - 31/08/19</span>
+                                </div>
+                                <div class="btn-more">
+                                    <span>Xem thêm > <i class="fa fa-angle-right" aria-hidden="true"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-item">
+                    <a href="#" target="_blank">
+                        <img src="../images/brand-5.jpg" alt="SHISEIDO">
+                    </a>
+                    <div class="circle-image">
+                        <a href=""><img src="../images/icon/brand-2.png" alt=""></a>
+                    </div>
+                    <div class="card-info" style="padding-top: 3rem;">
+                        <div class="desc">
+                            <h3>
+                                <span>Xóa Nhăn Vùng Mắt, Trán, Cau Mày, Khóe Miệng 1 Lần Duy Nhất...</span>
+                            </h3>
+                            <div class="bot">
+                                <div class="date">
+                                    <span>05/07/19 - 31/08/19</span>
+                                </div>
+                                <div class="btn-more">
+                                    <span>Xem thêm > <i class="fa fa-angle-right" aria-hidden="true"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-item">
+                    <a href="#" target="_blank">
+                        <img src="../images/brand-6.jpg" alt="SHISEIDO">
+                    </a>
+                    <div class="circle-image">
+                        <a href=""><img src="../images/icon/brand-3.png" alt=""></a>
+                    </div>
+                    <div class="card-info" style="padding-top: 3rem;">
+                        <div class="desc">
+                            <h3>
+                                <span>Xóa Nhăn Vùng Mắt, Trán, Cau Mày, Khóe Miệng 1 Lần Duy Nhất...</span>
+                            </h3>
+                            <div class="bot">
+                                <div class="date">
+                                    <span>05/07/19 - 31/08/19</span>
+                                </div>
+                                <div class="btn-more">
+                                    <span>Xem thêm > <i class="fa fa-angle-right" aria-hidden="true"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden-cards" style="display: none;">
+                    <!-- Các card ẩn -->
+                    <div class="image-item">
+                        <a href="#" target="_blank">
+                            <img src="../images/brand-1.jpg" alt="SHISEIDO">
+                        </a>
+                        <div class="circle-image">
+                            <a href=""><img src="../images/icon/brand-1.png" alt=""></a>
+                        </div>
+                        <div class="card-info" style="padding-top: 3rem;">
+                            <div class="desc">
+                                <h3>
+                                    <span>Xóa Nhăn Vùng Mắt, Trán, Cau Mày, Khóe Miệng 1 Lần Duy Nhất...</span>
+                                </h3>
+                                <div class="bot">
+                                    <div class="date">
+                                        <span>05/07/19 - 31/08/19</span>
+                                    </div>
+                                    <div class="btn-more">
+                                        <span>Xem thêm > <i class="fa fa-angle-right" aria-hidden="true"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image-item">
+                        <a href="#" target="_blank">
+                            <img src="../images/brand-2.jpg" alt="SHISEIDO">
+                        </a>
+                        <div class="circle-image">
+                            <a href=""><img src="../images/icon/brand-2.png" alt=""></a>
+                        </div>
+                        <div class="card-info" style="padding-top: 3rem;">
+                            <div class="desc">
+                                <h3>
+                                    <span>Xóa Nhăn Vùng Mắt, Trán, Cau Mày, Khóe Miệng 1 Lần Duy Nhất...</span>
+                                </h3>
+                                <div class="bot">
+                                    <div class="date">
+                                        <span>05/07/19 - 31/08/19</span>
+                                    </div>
+                                    <div class="btn-more">
+                                        <span>Xem thêm > <i class="fa fa-angle-right" aria-hidden="true"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image-item">
+                        <a href="#" target="_blank">
+                            <img src="../images/brand-3.jpg" alt="SHISEIDO">
+                        </a>
+                        <div class="circle-image">
+                            <a href=""><img src="../images/icon/brand-3.png" alt=""></a>
+                        </div>
+                        <div class="card-info" style="padding-top: 3rem;">
+                            <div class="desc">
+                                <h3>
+                                    <span>Xóa Nhăn Vùng Mắt, Trán, Cau Mày, Khóe Miệng 1 Lần Duy Nhất...</span>
+                                </h3>
+                                <div class="bot">
+                                    <div class="date">
+                                        <span>05/07/19 - 31/08/19</span>
+                                    </div>
+                                    <div class="btn-more">
+                                        <span>Xem thêm > <i class="fa fa-angle-right" aria-hidden="true"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </div>
+    </div>
+
+
+    <div class="pagination">
+        <ul>
+            <li>
+                <a href="" class="active">1</a>
+            </li>
+            <li>
+                <a href="">2</a>
+            </li>
+            <li>
+                <a href="">3</a>
+            </li>
+            <li>
+                <a href="">></a>
+            </li>
+        </ul>
+    </div>
+
+    <!------partner---------->
+    <div class="container-fluid">
+        <hr style="border: none;box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.75);">
+        <div class="container">
+            <div class="row">
+                <div class="partner" id="myPartner">
+                    <a href="#partner-1"><img src="../images/partner-1.png" alt="Đối tác 1"></a>
+                    <a href="#partner-2"><img src="../images/partner-2.png" alt="Đối tác 2"></a>
+                    <a href="#partner-3"><img src="../images/partner-3.png" alt="Đối tác 3"></a>
+                    <a href="#partner-4"><img src="../images/partner-4.png" alt="Đối tác 4"></a>
+                    <a href="#partner-5"><img src="../images/partner-5.png" alt="Đối tác 5"></a>
+                    <a href="#partner-6"><img src="../images/partner-6.png" alt="Đối tác 6"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--footer-->
+    <footer>
+        <div style="display: grid;gap: 10px;grid-template-columns: repeat(4, 1fr);" class="container">
+            <div class="footer-column">
+                <div class="column1">
+                    <span style="text-transform: uppercase;">Liên hệ</span>
+                    <p style="color: rgb(46, 41, 41);">-</p>
+                    <p><img src="../images/loc.png" alt="">58 Tố Hữu, Thanh Xuân, Hà Nội</p>
+                    <p><img src="../images/phone.png" alt="">(024).3783.5639</p>
+                    <p><img src="../images/email.png" alt="">emcodi123@gmail.com</p>
+                    <p><img src="../images/web.png" alt="">www.adcvietnam.com</p>
+                </div>
+            </div>
+            <div class="footer-column">
+                <div class="column1">
+                    <span style="text-transform: uppercase;">Về Leskin</span>
+                    <p style="color: rgb(46, 41, 41);">-</p>
+                    <p>Về chúng tôi</p>
+                    <p>Sứ mệnh</p>
+                    <p>Tăng trưởng</p>
+                    <p>Quan hệ cổ đông</p>
+                </div>
+            </div>
+            <div class="footer-column">
+                <div class="column1">
+                    <span style="text-transform: uppercase;">Tải app ngay</span>
+                    <p style="color: rgb(46, 41, 41);">-</p>
+                    <p><a href=""><img style="border-radius: 10px;margin-top: 4px; margin-bottom: 4px;"
+                                src="../images/app-android.jpg" alt=""></a></p>
+                    <p><a href=""><img style="border-radius: 10px;" src="../images/app-ios.jpg" alt=""></a></p>
+                </div>
+            </div>
+            <div class="footer-column">
+                <div class="column1">
+                    <span style="text-transform: uppercase;">NewLetter</span>
+                    <p style="color: rgb(46, 41, 41);">-</p>
+                    <p>Đăng kí để nhận ưu đãi hàng tháng</p>
+                    <div class="input-container">
+                        <input type="text" placeholder="Nhập email">
+                        <button type="submit">
+                            <img src="../images/send.png" alt="Search">
+                        </button>
+                    </div>
+                    <p><img style="margin: 4px;" src="../images/facebook.png" alt=""><img style="margin: 4px;"
+                            src="../images/youtube.png" alt=""><img style="margin: 4px;" src="../images/instagram.png"
+                            alt=""></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="bots">
+        <p>© 2019 Leskin. All rights reserved.</p>
+    </div>
+    <!--hotline-->
+    <div class="contact-button">
+        <img src="../images/hotline.png" alt="Liên hệ">
+        <div class="circle"></div>
+    </div>
+    <!--------------------------------------------------------------------------------->
+    <script>
+        let container = document.querySelector('.container');
+        let partner = document.getElementById('myPartner');
+        let amountToMove = 0;
+
+        // Thêm sự kiện cuộn chuột
+        // Lắng nghe sự kiện cuộn trang
+        window.addEventListener('scroll', function () {
+            var navbar = document.getElementById('myNavbar');
+            // Kiểm tra vị trí cuộn, nếu lớn hơn 50px, thêm lớp <link>CSS</link> để thu nhỏ <link>navbar</link>, ngược lại loại bỏ lớp <link>CSS</link>
+            if (window.scrollY > 50) {
+                navbar.classList.add('navbar-shrink');
+            } else {
+                navbar.classList.remove('navbar-shrink');
+            }
+        });
+        // Lấy phần tử cần thêm lớp "scrolled
+        //--------------------------------partner--------------------------------------------------
+
+        function movePartner() {
+            amountToMove -= 1;
+            partner.style.transform = 'translateX(' + amountToMove + 'px)';
+
+            // Nếu muốn lặp lại chuyển động
+            if (amountToMove <= -partner.scrollWidth) {
+                amountToMove = partner.clientWidth;
+            }
+            requestAnimationFrame(movePartner);
+        }
+        movePartner();
+    </script>
+    <!--------------------------------------------------------------------------------------------------->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+</body>
+</html>

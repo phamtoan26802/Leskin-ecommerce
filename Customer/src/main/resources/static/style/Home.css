@@ -1,0 +1,536 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Đặt logo ở trái */
+.navbar-brand {
+    margin-right: 2rem;
+}
+
+/* Các list-item và ô tìm kiếm ở giữa */
+.navbar-nav,
+.search-bar {
+    margin: auto;
+}
+
+/* Các nút đăng nhập và đăng ký ở phải */
+.btn-outline-primary,
+.btn-primary {
+    margin-left: 1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    /* Đường dẫn đến ảnh nền */
+    background-size: cover;
+    background: url("./static/images/header.jpg") no-repeat center;
+    border-bottom: 3px solid #d78135;
+    position: fixed;
+    /* cố định trên top------------------------------------*/
+    width: 100%;
+    top: 0;
+    transition: top 0.3s;
+}
+
+#myNavbar {
+    transition: top 0.3s;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Lớp CSS</link> để thu nhỏ <link>navbar</link> */
+.navbar-shrink {
+    padding-top: 0.05rem;
+    padding-bottom: 0.05rem;
+}
+
+.navbar-brand img {
+    height: 65px;
+    width: auto;
+}
+
+/*searchbar -------------------------------------------------------------------------------------------*/
+.search-bar {
+    display: flex;
+}
+
+.search-bar input[type="text"] {
+    padding: 8px 25px;
+    border: 2px solid #f0ab6e;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+/* Loại bỏ hiệu ứng khi focus vào input */
+.form-control:focus {
+    box-shadow: none;
+}
+
+.search-bar button {
+    padding: 8px 15px;
+    background-color: #e3a242;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-image: url('./static/images/search.png');
+    /* Đường dẫn đến hình ảnh kính lúp */
+    background-size: 14px;
+    /* Kích thước của hình ảnh kính lúp */
+    background-repeat: no-repeat;
+    /* Ngăn lặp lại hình ảnh */
+    background-position: 8px center;
+    /* Vị trí của hình ảnh trong button */
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+}
+
+/*button đăng nhập - đăng ký---------------------------------*/
+/*----------------------------------nav -------------------------------------------------*/
+
+.icon-grid {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.icon-row {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.icon-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+}
+
+.icon-container img {
+    width: 50px;
+    /* Thay đổi kích thước icon tùy theo yêu cầu */
+    transition: all 0.3s ease;
+}
+
+.icon-container img:hover {
+    transform: scale(1.2);
+    /* Khi di chuột đến, icon sẽ to lên 110% kích thước ban đầu */
+    font-weight: bold;
+    /* In đậm icon khi di chuột đến */
+}
+
+.icon-container p {
+    margin-top: 5px;
+    display: inline-block;
+    /* Hiển thị label như một block element để có thể căn chỉnh vị trí */
+    margin: 0;
+    vertical-align: top;
+    margin-left: 23px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #464646;
+    padding: 8px 0;
+
+}
+
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+.image-item {
+    flex: 1 0 300px;
+    position: relative;
+    /* Đặt vị trí tương đối */
+    margin: 13px;
+    border-radius: 8px;
+    border: 1px solid rgb(226, 221, 221);
+    width: 100%;
+    background-size: cover;
+    /* Hình ảnh sẽ được phóng to hoặc thu nhỏ sao cho nó phủ toàn bộ kích thước của card */
+    background-position: center;
+    /* Đặt hình ảnh vào giữa card */
+}
+
+.image-item img {
+    max-width: 100%;
+    overflow: hidden;
+    border-radius: 5px 5px 0 0;
+    cursor: pointer;
+}
+
+.circle-image {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    /* Thêm hiệu ứng box-shadow */
+    background-color: white;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-55%, -35%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle-image img {
+    max-width: 80px;
+    /* Điều chỉnh kích thước tối đa của hình ảnh */
+    max-height: 80px;
+}
+
+.image-item a {
+    text-decoration: none;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .image-item {
+        flex: 1 0 100%;
+    }
+}
+
+.card-info .desc {
+    padding: 14px 18px;
+}
+
+.card-info .desc h3 {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    color: #333;
+    height: 48px;
+    overflow: hidden;
+    transition: all .35s;
+    cursor: pointer;
+}
+
+.card-info h3 span {
+    display: inline-block;
+    vertical-align: top;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.card-info .bot {
+    margin-top: 5px;
+    overflow: hidden;
+}
+
+.card-info .bot .date {
+    float: left;
+    padding-left: 22px;
+    background-image: url('/static/images/date.png');
+    background-repeat: no-repeat;
+    background-position: 0px 4px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 24px;
+    color: #333;
+    margin: 3px 0;
+}
+
+.card-info .bot .btn-more {
+    float: right;
+    border: 1px solid #dd8f22;
+    display: block;
+    color: #d88821;
+    padding: 3px 13px 1px;
+    line-height: 24px;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: all .35s;
+}
+
+.card-info .bot .btn-more i {
+    margin-left: 2px;
+}
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/*-----------------------------------card---------------------------------------*/
+#show-more-btn {
+    display: table;
+    margin: auto;
+    margin-top: 20px;
+}
+
+#show-more-btn p {
+    display: inline-block;
+    vertical-align: top;
+    width: 210px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    color: white;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 10px 18px 8px;
+    border-radius: 21px;
+    background: #dd8f22;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#show-more-btn span {
+    border: 7px solid transparent;
+    display: inline-block;
+    vertical-align: top;
+    border-top-color: white;
+    transform: translate(0, 8px);
+    margin-left: 10px;
+}
+
+/*-----------------------------------nút xem thêm---------------------------------------*/
+.partner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f2f2f2;
+    padding: 10px 20px;
+    background-color: white;
+}
+
+.partner a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+    display: inline-block;
+}
+
+.partner img {
+    max-width: 100px;
+    /* Điều chỉnh kích thước ảnh nếu cần */
+}
+
+.container {
+    overflow: hidden;
+    position: relative;
+}
+
+@keyframes movePartner {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/*-------------------------------partner------------------------------------------*/
+footer {
+    display: flex;
+    /* Sử dụng flexbox để các cột cách đều nhau */
+    flex-direction: row;
+    background-color: rgb(46, 41, 41);
+}
+
+.footer-column {
+    flex: 1;
+    /* Các cột chiếm cùng một phần bằng nhau */
+    padding: 20px;
+    /* Thêm padding cho từng cột */
+    /* Các thuộc tính CSS khác cho các cột */
+}
+
+.footer-column .column1 span {
+    color: white;
+}
+
+.column1 {
+    display: block;
+    /* Hiển thị mỗi span trên một dòng */
+    color: rgb(189, 182, 182);
+}
+
+.column1 p {
+    margin: 0;
+}
+
+/*--------------------footer-------------------------*/
+.input-container {
+    display: flex;
+    align-items: center;
+}
+
+.input-container input[type="text"] {
+    padding: 5px;
+    background-color: #545252;
+    color: white;
+    flex: 1;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+}
+
+.input-container button {
+    padding: 5px;
+    background-color: #4f4e4e;
+    border: 1px solid #ccc;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.input-container img {
+    width: 20px;
+    height: 20px;
+}
+
+.bots {
+    background: #000;
+    text-align: center;
+    padding: 6px 0;
+    color: #ccc;
+}
+
+/*------------ liên hệ------------------*/
+.login-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    /* Màu nền làm mờ */
+    z-index: 999;
+    /* Đảm bảo form hiển thị trên tất cả các phần tử khác */
+}
+
+.login-form {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Thêm các thuộc tính CSS khác để tùy chỉnh form đăng nhập theo ý muốn */
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    /* Điều chỉnh độ rộng của form */
+    padding: 20px;
+    /* Khoảng cách giữa viền và nội dung form */
+    border: 1px solid #ccc;
+    /* Viền của form */
+    border-radius: 5px;
+    /* Bo tròn các góc của form */
+    background-image: url(../images/bg-sg.jpg);
+}
+
+.input-container1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    display: block;
+    background-color: white;
+    border-radius: 30px;
+    width: 100%;
+    /* Đảm bảo ô input điền đầy đủ chiều rộng của phần tử chứa nó */
+    padding: 10px;
+    /* Tạo khoảng cách xung quanh nội dung của ô input */
+    margin-bottom: 10px;
+    /* Tạo khoảng cách dưới cho ô input */
+}
+
+.input-group input {
+    border: none;
+}
+
+.input-group input:focus {
+    outline: none;
+    /* Xóa đường viền xung quanh ô input khi focus */
+    border: none;
+    /* Xóa border của ô input khi focus */
+}
+
+.input-group img {
+    width: 20px;
+    background-color: #ccc;
+    /* Điều chỉnh kích thước ảnh nếu cần thiết */
+    margin-right: 10px;
+}
+
+.login-form .login {
+    background-color: #dd8f22;
+    color: white;
+    border-radius: 20px;
+    width: 90%;
+    height: 2rem;
+    border: none;
+}
+
+/*------------------------form đăng nhập---------------------------------------*/
+.contact-button {
+    position: fixed;
+    left: 1rem;
+    width: 60px;
+    /* Đường kính của hình tròn */
+    height: 60px;
+    /* Đường kính của hình tròn */
+    background-color: red;
+    /* Màu đỏ */
+    bottom: 5rem;
+    border-radius: 50%;
+    /* Bo tròn thành hình tròn */
+    display: flex;
+    /* Sử dụng Flexbox layout */
+    justify-content: center;
+    /* Căn giữa theo chiều ngang */
+    align-items: center;
+    /* Căn giữa theo chiều dọc */
+}
+
+@keyframes shake {
+    0% {
+        transform: rotate(-5deg);
+    }
+
+    50% {
+        transform: rotate(5deg);
+    }
+
+    100% {
+        transform: rotate(-5deg);
+    }
+}
+
+.contact-button img {
+    animation: shake 0.5s infinite;
+}
+
+/*------------------------hotline---------------------------------------*/

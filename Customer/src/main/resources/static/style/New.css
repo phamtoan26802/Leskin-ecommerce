@@ -1,0 +1,330 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Đặt logo ở trái */
+.navbar-brand {
+    margin-right: 2rem;
+}
+
+/* Các list-item và ô tìm kiếm ở giữa */
+.navbar-nav,
+.search-bar {
+    margin: auto;
+}
+
+/* Các nút đăng nhập và đăng ký ở phải */
+.btn-outline-primary,
+.btn-primary {
+    margin-left: 1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-image: url('../images/header.jpg');
+    /* Đường dẫn đến ảnh nền */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-bottom: 3px solid #d78135;
+    position: fixed;
+    /* cố định trên top------------------------------------*/
+    width: 100%;
+    top: 0;
+    transition: top 0.3s;
+}
+
+#myNavbar {
+    transition: top 0.3s;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Lớp CSS</link> để thu nhỏ <link>navbar</link> */
+.navbar-shrink {
+    padding-top: 0.05rem;
+    padding-bottom: 0.05rem;
+}
+
+.navbar-brand img {
+    height: 65px;
+    width: auto;
+}
+
+/*searchbar -------------------------------------------------------------------------------------------*/
+.search-bar {
+    display: flex;
+}
+
+.search-bar input[type="text"] {
+    padding: 8px 25px;
+    border: 2px solid #f0ab6e;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+/* Loại bỏ hiệu ứng khi focus vào input */
+.form-control:focus {
+    box-shadow: none;
+}
+
+.search-bar button {
+    padding: 8px 15px;
+    background-color: #e3a242;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-image: url('../images/search.png');
+    /* Đường dẫn đến hình ảnh kính lúp */
+    background-size: 14px;
+    /* Kích thước của hình ảnh kính lúp */
+    background-repeat: no-repeat;
+    /* Ngăn lặp lại hình ảnh */
+    background-position: 8px center;
+    /* Vị trí của hình ảnh trong button */
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+}
+
+/*button đăng nhập - đăng ký---------------------------------*/
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 0 1 calc(50% - 20px);
+    /* Điều chỉnh kích thước và margin để phù hợp với thiết kế của bạn */
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.card-content {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    /* Đảo ngược thứ tự hiển thị của các phần tử con */
+}
+
+.card img {
+    flex: 1;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    /* Đảm bảo rằng hình ảnh sẽ tràn đúng vào viền của card */
+}
+
+.card-info {
+    flex: 1;
+}
+
+.card-info h3 {
+    margin: 0 0 10px 0;
+}
+
+.card-info p {
+    margin: 0;
+}
+
+.card .btn-more {
+    border: 1px solid #dd8f22;
+    display: inline-block;
+    color: #d88821;
+    padding: 3px 13px 1px;
+    line-height: 24px;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: all .35s;
+    vertical-align: top;
+}
+
+.pagination {
+    margin: 8px auto 20px;
+    display: table;
+}
+
+.pagination ul {
+    list-style: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.pagination ul li {
+    float: left;
+    margin: 5px;
+
+}
+
+.pagination ul li a:hover,
+.pagination ul li a.active {
+    border-color: #dd8f22;
+    background: #dd8f22;
+    color: #fff;
+
+}
+
+.pagination ul li a {
+    display: block;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    color: #312c2c;
+    text-decoration: none;
+}
+
+/*----------------------------------nav -------------------------------------------------*/
+.partner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f2f2f2;
+    padding: 10px 20px;
+    background-color: white;
+}
+
+.partner a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+    display: inline-block;
+}
+
+.partner img {
+    max-width: 100px;
+    /* Điều chỉnh kích thước ảnh nếu cần */
+}
+
+.container {
+    overflow: hidden;
+    position: relative;
+}
+
+@keyframes movePartner {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/*-------------------------------partner------------------------------------------*/
+footer {
+    display: flex;
+    /* Sử dụng flexbox để các cột cách đều nhau */
+    flex-direction: row;
+    background-color: rgb(46, 41, 41);
+}
+
+.footer-column {
+    flex: 1;
+    /* Các cột chiếm cùng một phần bằng nhau */
+    padding: 20px;
+    /* Thêm padding cho từng cột */
+    /* Các thuộc tính CSS khác cho các cột */
+}
+
+.footer-column .column1 span {
+    color: white;
+}
+
+.column1 {
+    display: block;
+    /* Hiển thị mỗi span trên một dòng */
+    color: rgb(189, 182, 182);
+}
+
+.column1 p {
+    margin: 0;
+}
+
+/*--------------------footer-------------------------*/
+.input-container {
+    display: flex;
+    align-items: center;
+}
+
+.input-container input[type="text"] {
+    padding: 5px;
+    background-color: #545252;
+    color: white;
+    flex: 1;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+}
+
+.input-container button {
+    padding: 5px;
+    background-color: #4f4e4e;
+    border: 1px solid #ccc;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.input-container img {
+    width: 20px;
+    height: 20px;
+}
+
+.bots {
+    background: #000;
+    text-align: center;
+    padding: 6px 0;
+    color: #ccc;
+}
+
+/*------------------------hotline---------------------------------------*/
+.contact-button {
+    position: fixed;
+    left: 1rem;
+    width: 60px;
+    /* Đường kính của hình tròn */
+    height: 60px;
+    /* Đường kính của hình tròn */
+    background-color: red;
+    /* Màu đỏ */
+    bottom: 5rem;
+    border-radius: 50%;
+    /* Bo tròn thành hình tròn */
+    display: flex;
+    /* Sử dụng Flexbox layout */
+    justify-content: center;
+    /* Căn giữa theo chiều ngang */
+    align-items: center;
+    /* Căn giữa theo chiều dọc */
+}
+
+@keyframes shake {
+    0% {
+        transform: rotate(-5deg);
+    }
+
+    50% {
+        transform: rotate(5deg);
+    }
+
+    100% {
+        transform: rotate(-5deg);
+    }
+}
+
+.contact-button img {
+    animation: shake 0.5s infinite;
+}
