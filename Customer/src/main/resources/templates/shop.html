@@ -37,144 +37,14 @@
 
 <body>
     <!-- Start Main Top -->
-    <div style="background-color: rgb(243, 80, 11);" class="main-top">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <div class="our-link">
-                        <ul>
-                            <li><a href="#"> Call US : +84967631186</a></li>
-                            <li><a href="#"><i class="fas fa-location-arrow"></i> Address: 58 Tố Hữu, Thanh Xuân, Hà
-                                    Nội</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <div class="login-box">
-                        <select id="basic" class="selectpicker show-tick form-control" data-placeholder="Sign In">
-                            <option><a href="signup.html">Sign In </a></option>
-                            <option><a href="signup.html">Sign Up </a></option>
-                        </select>
-                    </div>
-                    <div class="text-slid-box">
-                        <div id="offer-box" class="carouselTicker">
-                            <ul class="offer-box">
-                                <li>
-                                    <i class="fab fa-opencart"></i> Off 5% for new members
-                                </li>
-                                <li>
-                                    <i class="fab fa-opencart"></i> Freeship
-                                </li>
-                                <li>
-                                    <i class="fab fa-opencart"></i> 10% off Entire Purchase Promo code: Leskin
-                                </li>
-                                <li>
-                                    <i class="fab fa-opencart"></i> Off upto 10%! Shop Now
-                                </li>
-                                <li>
-                                    <i class="fab fa-opencart"></i> Off 5% for new members
-                                </li>
-                                <li>
-                                    <i class="fab fa-opencart"></i> Freeship
-                                </li>
-                                <li>
-                                    <i class="fab fa-opencart"></i> 10% off Entire Purchase Promo code: Leskin
-                                </li>
-                                <li>
-                                    <i class="fab fa-opencart"></i> Off 10%! Shop Now
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div th:replace="~{fragments::main-top}">
     </div>
     <!-- End Main Top -->
 
 
     <!-- Start Main Top -->
-    <header class="main-header">
+    <header th:replace="~{fragments::main-header}">
         <!-- Start Navigation -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-default bootsnav">
-            <div class="container">
-                <!-- Start Header Navigation -->
-                <div class="navbar-header">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu"
-                        aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="fa fa-bars"></i>
-                    </button>
-                    <!--<a class="navbar-brand" href="index.html"><img src="images/logo1.png" class="logo" width="180" height="150" alt=""></a> -->
-                </div>
-                <!-- End Header Navigation -->
-
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="navbar-menu">
-                    <ul class="nav navbar-nav ml-auto" data-in="fadeInDown" data-out="fadeOutUp">
-                        <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="index.html">Menu</a></li>
-
-                        <li class="dropdown active">
-                            <a href="#" class="nav-link dropdown-toggle arrow " data-toggle="dropdown">Shop</a>
-                            <ul class="dropdown-menu">
-                                <li><a href="shop.html">Shop Detail</a></li>
-                                <li><a href="product-detail.html">Product Detail</a></li>
-                                <li><a href="cart.html">Cart</a></li>
-                                <li><a href="checkout.html">Checkout</a></li>
-                                <li><a href="my-account.html">My Account</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item"><a class="nav-link" href="contact-us.html">Contact Us</a></li>
-                    </ul>
-                </div>
-                <!-- /.navbar-collapse -->
-
-                <!-- Start Atribute Navigation -->
-                <div class="attr-nav">
-                    <ul>
-                        <li class="search"><a href="#"><i class="fa fa-search"></i></a></li>
-                        <li class="side-menu">
-                            <a href="#">
-                                <i class="fa fa-shopping-bag"></i>
-                                <span class="badge">3</span>
-                                <p>My Cart</p>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- End Atribute Navigation -->
-            </div>
-            <!-- Start Side Menu -->
-            <div class="side">
-                <a href="#" class="close-side"><i class="fa fa-times"></i></a>
-                <li class="cart-box">
-                    <ul class="cart-list">
-                        <li>
-                            <a href="#" class="photo"><img src="images/PeelingPads_DoublePack.jpg" class="cart-thumb"
-                                    alt="" /></a>
-                            <h6><a href="#">Peeling Pads 2 Packs</a></h6>
-                            <p>1 - <span class="price">$60.00</span></p>
-                        </li>
-                        <li>
-                            <a href="#" class="photo"><img src="images/UltimateGlowSet.jpg" class="cart-thumb"
-                                    alt="" /></a>
-                            <h6><a href="#">Ultimate Glow Set</a></h6>
-                            <p>1 - <span class="price">$58.00</span></p>
-                        </li>
-                        <li>
-                            <a href="#" class="photo"><img src="images/Faceserum.jpg" class="cart-thumb" alt="" /></a>
-                            <h6><a href="#">Face Serum</a></h6>
-                            <p>1 - <span class="price">$50.00</span></p>
-                        </li>
-                        <li class="total">
-                            <a href="cart.html" class="btn btn-default hvr-hover btn-cart">VIEW CART</a>
-                            <span class="float-right"><strong>Total</strong>: $168.00</span>
-                        </li>
-                    </ul>
-                </li>
-            </div>
-            <!-- End Side Menu -->
-        </nav>
         <!-- End Navigation -->
     </header>
     <!-- End Main Top -->
@@ -244,18 +114,18 @@
                                 </ul>
                             </div>
                         </div>
-
+                        <!--All products-->
                         <div class="product-categorie-box">
                             <div class="tab-content">
                                 <div role="tabpanel" class="tab-pane fade show active" id="grid-view">
                                     <div class="row">
-                                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4" th:each="product : ${products}">
                                             <div class="products-single fix">
                                                 <div class="box-img-hover">
-                                                    <img src="images/Face-serum.jpg" class="img-fluid" alt="Image">
+                                                    <img th:src="*{'data:image/jpeg;base64,' + product.image}" class="img-fluid" alt="Image">
                                                     <div class="mask-icon">
                                                         <ul>
-                                                            <li><a href="product-detail.html" data-toggle="tooltip"
+                                                            <li><a th:href="@{/find-product/{id}(id = ${product.id})}" data-toggle="tooltip"
                                                                     data-placement="right" title="View"><i
                                                                         class="fas fa-eye"></i></a></li>
                                                         </ul>
@@ -263,162 +133,8 @@
                                                     </div>
                                                 </div>
                                                 <div class="why-text">
-                                                    <h4>Face Serum</h4>
-                                                    <h5> $50.00</h5>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
-                                            <div class="products-single fix">
-                                                <div class="box-img-hover">
-                                                    <img src="images/FaceSerum_DoublePack.jpg" class="img-fluid"
-                                                        alt="Image">
-                                                    <div class="mask-icon">
-                                                        <ul>
-                                                            <li><a href="product-detail.html" data-toggle="tooltip"
-                                                                    data-placement="right" title="View"><i
-                                                                        class="fas fa-eye"></i></a></li>
-                                                        </ul>
-                                                        <a class="cart" href="#">Add to Cart</a>
-                                                    </div>
-                                                </div>
-                                                <div class="why-text">
-                                                    <h4>Face Serum Double Packs</h4>
-                                                    <h5> $85.75</h5>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
-                                            <div class="products-single fix">
-                                                <div class="box-img-hover">
-                                                    <img src="images/SkinBoosterSet.jpg" class="img-fluid" alt="Image">
-                                                    <div class="mask-icon">
-                                                        <ul>
-                                                            <li><a href="product-detail.html" data-toggle="tooltip"
-                                                                    data-placement="right" title="View"><i
-                                                                        class="fas fa-eye"></i></a></li>
-                                                        </ul>
-                                                        <a class="cart" href="#">Add to Cart</a>
-                                                    </div>
-                                                </div>
-                                                <div class="why-text">
-                                                    <h4>Skin Booster Set</h4>
-                                                    <h5> $125.00</h5>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
-                                            <div class="products-single fix">
-                                                <div class="box-img-hover">
-
-                                                    <img src="images/TanningDrops.jpg" class="img-fluid" alt="Image">
-                                                    <div class="mask-icon">
-                                                        <ul>
-                                                            <li><a href="product-detail.html" data-toggle="tooltip"
-                                                                    data-placement="right" title="View"><i
-                                                                        class="fas fa-eye"></i></a></li>
-                                                        </ul>
-                                                        <a class="cart" href="#">Add to Cart</a>
-                                                    </div>
-                                                </div>
-                                                <div class="why-text">
-                                                    <h4>Taining Drops</h4>
-                                                    <h5> $35.00</h5>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
-                                            <div class="products-single fix">
-                                                <div class="box-img-hover">
-                                                    <img src="images/TanningDrops_DoublePack.jpg" class="img-fluid"
-                                                        alt="Image">
-                                                    <div class="mask-icon">
-                                                        <ul>
-                                                            <li><a href="#" data-toggle="tooltip" data-placement="right"
-                                                                    title="View"><i class="fas fa-eye"></i></a></li>
-                                                        </ul>
-                                                        <a class="cart" href="#">Add to Cart</a>
-                                                    </div>
-                                                </div>
-                                                <div class="why-text">
-                                                    <h4>Taining Drops 2 Packs</h4>
-                                                    <h5> $60.00</h5>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
-                                            <div class="products-single fix">
-                                                <div class="box-img-hover">
-                                                    <img src="images/UltimateGlowSet.jpg" class="img-fluid" alt="Image">
-                                                    <div class="mask-icon">
-                                                        <ul>
-                                                            <li><a href="#" data-toggle="tooltip" data-placement="right"
-                                                                    title="View"><i class="fas fa-eye"></i></a></li>
-                                                        </ul>
-                                                        <a class="cart" href="#">Add to Cart</a>
-                                                    </div>
-                                                </div>
-                                                <div class="why-text">
-                                                    <h4>Ultimate Glow Set</h4>
-                                                    <h5> $58.00</h5>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
-                                            <div class="products-single fix">
-                                                <div class="box-img-hover">
-                                                    <img src="images/DeepCleanseSet.jpg" class="img-fluid" alt="Image">
-                                                    <div class="mask-icon">
-                                                        <ul>
-                                                            <li><a href="product-detail.html" data-toggle="tooltip"
-                                                                    data-placement="right" title="View"><i
-                                                                        class="fas fa-eye"></i></a></li>
-                                                        </ul>
-                                                        <a class="cart" href="#">Add to Cart</a>
-                                                    </div>
-                                                </div>
-                                                <div class="why-text">
-                                                    <h4>Deep Cleanse Set</h4>
-                                                    <h5> $60.00</h5>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
-                                            <div class="products-single fix">
-                                                <div class="box-img-hover">
-                                                    <img src="images/PeelingPads.jpg" class="img-fluid" alt="Image">
-                                                    <div class="mask-icon">
-                                                        <ul>
-                                                            <li><a href="product-detail.html" data-toggle="tooltip"
-                                                                    data-placement="right" title="View"><i
-                                                                        class="fas fa-eye"></i></a></li>
-                                                        </ul>
-                                                        <a class="cart" href="#">Add to Cart</a>
-                                                    </div>
-                                                </div>
-                                                <div class="why-text">
-                                                    <h4>Peeling Pads</h4>
-                                                    <h5> $35.00</h5>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
-                                            <div class="products-single fix">
-                                                <div class="box-img-hover">
-                                                    <img src="images/PeelingPads_DoublePack.jpg" class="img-fluid"
-                                                        alt="Image">
-                                                    <div class="mask-icon">
-                                                        <ul>
-                                                            <li><a href="product-detail.html" data-toggle="tooltip"
-                                                                    data-placement="right" title="View"><i
-                                                                        class="fas fa-eye"></i></a></li>
-                                                        </ul>
-                                                        <a class="cart" href="#">Add to Cart</a>
-                                                    </div>
-                                                </div>
-                                                <div class="why-text">
-                                                    <h4>Peeling Pads 2 Packs</h4>
-                                                    <h5> $60.00</h5>
+                                                    <h4 th:text="${product.name}"></h4>
+                                                    <h5 th:text="'$' + ${product.costPrice}"></h5>
                                                 </div>
                                             </div>
                                         </div>
@@ -427,106 +143,21 @@
 
 
                                 <div role="tabpanel" class="tab-pane fade" id="list-view">
-                                    <div class="list-view-box">
+                                    <div class="list-view-box" th:each="productView : ${viewProducts}">
                                         <div class="row">
-                                            <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                                            <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4" >
                                                 <div class="products-single fix">
                                                     <div class="box-img-hover">
-                                                        <img src="images/Crap Soft-Shell.jpg" class="img-fluid"
+                                                        <img th:src="*{'data:image/jpeg;base64,' + productView.image}" class="img-fluid"
                                                             alt="Image">
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-sm-6 col-md-6 col-lg-8 col-xl-8">
+                                            <div class="col-sm-6 col-md-6 col-lg-8 col-xl-8" >
                                                 <div class="why-text full-width">
-                                                    <h4>Soft Shell Crab Crostini With Arugula Butter</h4>
-                                                    <h5>$30.75</h5>
-                                                    <p> The trick is to know when to take them off the heat. As soon as
-                                                        they turn from gray-brown to rust and white, the texture goes
-                                                        from soft to taut and they are ready.</p>
-                                                    <p> Soft-shell crabs don't need much adornment; a squirt of citrus
-                                                        and some freshly ground black pepper offset the funky sea flavor
-                                                        beautifully.
-                                                        But a little garlic and something green and sprightly (here, a
-                                                        combination of arugula and chives) can make them even better.
-                                                    </p>
-                                                    <a class="btn hvr-hover" href="#">Add to Cart</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="list-view-box">
-                                        <div class="row">
-                                            <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
-                                                <div class="products-single fix">
-                                                    <div class="box-img-hover">
-                                                        <img src="images/Fish 01 - Fish Tacos.jpg" class="img-fluid"
-                                                            alt="Image">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-6 col-md-6 col-lg-8 col-xl-8">
-                                                <div class="why-text full-width">
-                                                    <h4>Fish Tacos</h4>
-                                                    <h5>$35.00</h5>
-                                                    <p>Searching for a lighter alternative to traditional fried fish, I
-                                                        came up with this crispy, crunchy fish tacos recipe. It's a hit
-                                                        with friends and family. </p>
-                                                    <p>Fish tacos are a favorite quick and easy weeknight meal. Choose
-                                                        cod, tilapia, or halibut, quickly pan-sear in a skillet, and
-                                                        serve with a simply cabbage slaw.</p>
-                                                    <a class="btn hvr-hover" href="#">Add to Cart</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="list-view-box">
-                                        <div class="row">
-                                            <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
-                                                <div class="products-single fix">
-                                                    <div class="box-img-hover">
-                                                        <img src="images/Lobster 04 - Warm lobster..jpg"
-                                                            class="img-fluid" alt="Image">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-6 col-md-6 col-lg-8 col-xl-8">
-                                                <div class="why-text full-width">
-                                                    <h4>Warm lobster</h4>
-                                                    <h5>$40.75</h5>
-                                                    <p> Maybe there is nothing better than a boiled lobster straight
-                                                        from the pot, easily managed for two people, with no more
-                                                        accompaniment than a little melted butter.
-                                                        But sometimes that is too simple a preparation. So how about
-                                                        lobster stew? Not difficult, and easier to eat.
-                                                        For a homey-sophisticated touch, though, we suggest this lobster
-                                                        stew with a pastry lid, finished with a shower of freshly
-                                                        snipped herbs.</p>
-                                                    <a class="btn hvr-hover" href="#">Add to Cart</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="list-view-box">
-                                        <div class="row">
-                                            <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
-                                                <div class="products-single fix">
-                                                    <div class="box-img-hover">
-                                                        <img src="images/Octopus 04 - Pan-Seared Octopus with Italian Vegetable Salad.jpg"
-                                                            class="img-fluid" alt="Image">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-6 col-md-6 col-lg-8 col-xl-8">
-                                                <div class="why-text full-width">
-                                                    <h4>Pan-Seared Octopus with Italian Vegetable Salad</h4>
-                                                    <h5>$50.75</h5>
-                                                    <p> Vinny Dotolo describes this salad's genesis: "I originally
-                                                        wanted to do an octopus sandwich, with the flavors of an Italian
-                                                        sub, but the bread got in the way."
-                                                        Now he sears the octopus, braises it in white wine until tender,
-                                                        and tosses it with chickpeas and a tangy mix of marinated
-                                                        carrots, fennel and celery.</p>
+                                                    <h4 th:text="${productView.name}"></h4>
+                                                    <h5 th:text="'$' + ${productView.costPrice}"></h5>
+                                                    <p th:text="${productView.description}"></p>
                                                     <a class="btn hvr-hover" href="#">Add to Cart</a>
                                                 </div>
                                             </div>
@@ -551,17 +182,9 @@
                                 <h3>Categories</h3>
                             </div>
                             <div class="list-group list-group-collapse list-group-sm list-group-tree"
-                                id="list-group-men" data-children=".sub-men">
-                                <a href="#" class="list-group-item list-group-item-action">Face Serum <small
-                                        class="text-muted">(7)</small></a>
-                                <a href="#" class="list-group-item list-group-item-action">Peeling Pads <small
-                                        class="text-muted">(6)</small></a>
-                                <a href="#" class="list-group-item list-group-item-action">Deep Cleanse <small
-                                        class="text-muted">(8) </small></a>
-                                <a href="#" class="list-group-item list-group-item-action">Cleansing Gel <small
-                                        class="text-muted">(8)</small></a>
-                                <a href="#" class="list-group-item list-group-item-action">Taining Drops <small
-                                        class="text-muted">(8)</small></a>
+                                id="list-group-men" data-children=".sub-men" th:each="category : ${category}">
+                                <a th:href="@{/product-in-category/{id}(id = ${category.categoryId})}" class="list-group-item list-group-item-action">[[${category.categoryName}]]<small
+                                        class="text-muted">  ([[${category.numberOfProduct}]]) </small></a>
                             </div>
                         </div>
                         <div class="filter-price-left">

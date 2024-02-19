@@ -1,5 +1,6 @@
 package com.ecommerce.product.service.imp;
 
+import com.ecommerce.product.dto.CategoryDto;
 import com.ecommerce.product.model.Category;
 import com.ecommerce.product.repository.CategoryRepository;
 import com.ecommerce.product.service.CategoryService;
@@ -61,5 +62,10 @@ public class CategoryServiceImpl implements CategoryService {
     @Override
     public List<Category> findAllByActivated() {
         return repo.findAllByActivated();
+    }
+
+    @Override
+    public List<CategoryDto> getCategoryAndProduct() {
+        return repo.getCategoryAndProduct();
     }
 }
