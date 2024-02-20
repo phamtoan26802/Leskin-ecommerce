@@ -30,58 +30,7 @@
 </head>
 
 <body>
-    <div class="main-top">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <div class="our-link">
-                        <ul>
-                            <li><a href="#"> Call US : +84967631186</a></li>
-                            <li><a href="#"><i class="fas fa-location-arrow"></i> Address: 58 Tố Hữu, Thanh Xuân, Hà
-                                    Nội</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <div class="login-box">
-                        <select id="basic" class="selectpicker show-tick form-control" data-placeholder="Sign In">
-                            <option value="Sign In"><a href="signup.html">Sign In </a></option>
-                            <option value="Sign Up"><a href="signup.html">Sign Up </a></option>
-                        </select>
-                    </div>
-                    <div class="text-slid-box">
-                        <div id="offer-box" class="carouselTicker">
-                            <ul class="offer-box">
-                                <li>
-                                    <i class="fab fa-opencart"></i> Off 5% for new members
-                                </li>
-                                <li>
-                                    <i class="fab fa-opencart"></i> Freeship
-                                </li>
-                                <li>
-                                    <i class="fab fa-opencart"></i> 10% off Entire Purchase Promo code: Leskin
-                                </li>
-                                <li>
-                                    <i class="fab fa-opencart"></i> Off upto 10%! Shop Now
-                                </li>
-                                <li>
-                                    <i class="fab fa-opencart"></i> Off 5% for new members
-                                </li>
-                                <li>
-                                    <i class="fab fa-opencart"></i> Freeship
-                                </li>
-                                <li>
-                                    <i class="fab fa-opencart"></i> 10% off Entire Purchase Promo code: Leskin
-                                </li>
-                                <li>
-                                    <i class="fab fa-opencart"></i> Off 10%! Shop Now
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div th:replace="~{fragments::main-top}">
     </div>
     <!-- End Main Top -->
 
@@ -108,7 +57,7 @@
     <div id="slides-shop" class="cover-slides">
         <ul class="slides-container">
             <li class="text-center">
-                <img src="images/bellafore.jpeg" alt="">
+                <img src="images/banner.jpg" alt="">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
@@ -119,7 +68,7 @@
                 </div>
             </li>
             <li class="text-center">
-                <img src="images/detail.jpg" alt="">
+                <img src="images/banner-slider.jpg" alt="">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
@@ -201,6 +150,8 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
 
 
             <!-- Start Feed  -->

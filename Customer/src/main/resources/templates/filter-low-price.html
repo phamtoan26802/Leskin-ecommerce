@@ -92,9 +92,9 @@
               <div class="toolbar-sorter-right">
                 <span>Sort by </span>
                 <select id="basic" class="selectpicker show-tick form-control"
-                        data-placeholder="$ USD">
+                        data-placeholder="$ USD" onchange="location = this.value;">
                   <option data-display="Select">Nothing</option>
-                  <option value="http://localhost:8020/shop/high-price">High Price → High Price</option>
+                  <option value="http://localhost:8020/shop/high-price">High Price → Low Price</option>
                   <option value="http://localhost:8020/shop/low-price">Low Price → High Price</option>
                   <option data-display="Select">Best Selling</option>
                 </select>
@@ -115,7 +115,7 @@
             </div>
           </div>
           <!--all product-->
-          <div class="container">
+          <div class="container" th:each="category : ${categories}">
             <div class="row">
               <div class="col-lg-12">
                 <div class="title-all text-center">
@@ -153,7 +153,7 @@
                       </div>
                   </div>
               </div>-->
-              <div class="col-lg-3 col-md-6 special-grid" th:each="product : ${products}">
+              <div class="col-lg-3 col-md-6 special-grid" th:each="product : ${products}" th:if="${product.category.id == category.id}">
                 <div class="products-single fix">
                   <div class="box-img-hover">
                     <img th:src="@{'data:image/jpeg;base64,' + ${product.image}}" class="img-fluid" alt="Image">
@@ -177,7 +177,7 @@
       </div>
 
       <div class="col-xl-3 col-lg-3 col-sm-12 col-xs-12 sidebar-shop-left">
-        <div class="product-categories">
+        <div class="product-categori">
           <div class="search-product">
             <form action="#">
               <input class="form-control" placeholder="Search here..." type="text">
@@ -189,9 +189,9 @@
               <h3>Categories</h3>
             </div>
             <div class="list-group list-group-collapse list-group-sm list-group-tree"
-                 id="list-group-men" data-children=".sub-men" th:each="category : ${categories}">
-              <a th:href="@{/product-in-category/{id}(id = ${category.categoryId})}" class="list-group-item list-group-item-action">[[${category.categoryName}]]<small
-                      class="text-muted">  ([[${category.numberOfProduct}]]) </small></a>
+                 id="list-group-men" data-children=".sub-men" th:each="categoryDto : ${categoryDtoList}">
+              <a th:href="@{/product-in-category/{id}(id = ${categoryDto.categoryId})}" class="list-group-item list-group-item-action">[[${categoryDto.categoryName}]]<small
+                      class="text-muted">  ([[${categoryDto.numberOfProduct}]]) </small></a>
             </div>
           </div>
           <div class="filter-price-left">
