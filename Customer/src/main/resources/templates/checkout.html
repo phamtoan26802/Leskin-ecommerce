@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="css/responsive.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -37,157 +38,20 @@
 
 <body>
     <!-- Start Main Top -->
-    <div class="main-top">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <div class="our-link">
-                        <ul>
-                            <li><a href="#"> Call US : +84967631186</a></li>
-                            <li><a href="#"><i class="fas fa-location-arrow"></i> Address: 58 Tố Hữu, Thanh Xuân, Hà
-                                    Nội</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <div class="login-box">
-                        <select id="basic" class="selectpicker show-tick form-control" data-placeholder="Sign In">
-                            <option><a href="signup.html">Sign In </a></option>
-                            <option><a href="signup.html">Sign Up </a></option>
-                        </select>
-                    </div>
-                    <div class="text-slid-box">
-                        <div id="offer-box" class="carouselTicker">
-                            <ul class="offer-box">
-                                <li>
-                                    <i class="fab fa-opencart"></i> Off 5% for new members
-                                </li>
-                                <li>
-                                    <i class="fab fa-opencart"></i> Freeship
-                                </li>
-                                <li>
-                                    <i class="fab fa-opencart"></i> 10% off Entire Purchase Promo code: Leskin
-                                </li>
-                                <li>
-                                    <i class="fab fa-opencart"></i> Off upto 10%! Shop Now
-                                </li>
-                                <li>
-                                    <i class="fab fa-opencart"></i> Off 5% for new members
-                                </li>
-                                <li>
-                                    <i class="fab fa-opencart"></i> Freeship
-                                </li>
-                                <li>
-                                    <i class="fab fa-opencart"></i> 10% off Entire Purchase Promo code: Leskin
-                                </li>
-                                <li>
-                                    <i class="fab fa-opencart"></i> Off 10%! Shop Now
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div th:replace="~{fragments::main-top}">
     </div>
     <!-- End Main Top -->
 
 
     <!-- Start Main Top -->
-    <header class="main-header">
+    <header th:replace="~{fragments::main-header}">
         <!-- Start Navigation -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-default bootsnav">
-            <div class="container">
-                <!-- Start Header Navigation -->
-                <div class="navbar-header">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu"
-                        aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="fa fa-bars"></i>
-                    </button>
-                    <!--<a class="navbar-brand" href="index.html"><img src="images/logo1.png" class="logo" width="180" height="150" alt=""></a> -->
-                </div>
-                <!-- End Header Navigation -->
-
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="navbar-menu">
-                    <ul class="nav navbar-nav ml-auto" data-in="fadeInDown" data-out="fadeOutUp">
-                        <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="index.html">Menu</a></li>
-
-                        <li class="dropdown active">
-                            <a href="#" class="nav-link dropdown-toggle arrow " data-toggle="dropdown">Shop</a>
-                            <ul class="dropdown-menu">
-                                <li><a href="shop.html">Shop Detail</a></li>
-                                <li><a href="product-detail.html">Product Detail</a></li>
-                                <li><a href="cart.html">Cart</a></li>
-                                <li><a href="checkout.html">Checkout</a></li>
-                                <li><a href="my-account.html">My Account</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item"><a class="nav-link" href="contact-us.html">Contact Us</a></li>
-                    </ul>
-                </div>
-                <!-- /.navbar-collapse -->
-
-                <!-- Start Atribute Navigation -->
-                <div class="attr-nav">
-                    <ul>
-                        <li class="search"><a href="#"><i class="fa fa-search"></i></a></li>
-                        <li class="side-menu">
-                            <a href="#">
-                                <i class="fa fa-shopping-bag"></i>
-                                <span class="badge">3</span>
-                                <p>My Cart</p>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- End Atribute Navigation -->
-            </div>
-            <!-- Start Side Menu -->
-            <div class="side">
-                <a href="#" class="close-side"><i class="fa fa-times"></i></a>
-                <li class="cart-box">
-                    <ul class="cart-list">
-                        <li>
-                            <a href="#" class="photo"><img src="images/PeelingPads_DoublePack.jpg" class="cart-thumb"
-                                    alt="" /></a>
-                            <h6><a href="#">Peeling Pads 2 Packs</a></h6>
-                            <p>1 - <span class="price">$60.00</span></p>
-                        </li>
-                        <li>
-                            <a href="#" class="photo"><img src="images/UltimateGlowSet.jpg" class="cart-thumb"
-                                    alt="" /></a>
-                            <h6><a href="#">Ultimate Glow Set</a></h6>
-                            <p>1 - <span class="price">$58.00</span></p>
-                        </li>
-                        <li>
-                            <a href="#" class="photo"><img src="images/Faceserum.jpg" class="cart-thumb" alt="" /></a>
-                            <h6><a href="#">Face Serum</a></h6>
-                            <p>1 - <span class="price">$50.00</span></p>
-                        </li>
-                        <li class="total">
-                            <a href="cart.html" class="btn btn-default hvr-hover btn-cart">VIEW CART</a>
-                            <span class="float-right"><strong>Total</strong>: $168.00</span>
-                        </li>
-                    </ul>
-                </li>
-            </div>
-            <!-- End Side Menu -->
-        </nav>
         <!-- End Navigation -->
     </header>
     <!-- End Main Top -->
 
     <!-- Start Top Search -->
-    <div class="top-search">
-        <div class="container">
-            <div class="input-group">
-                <span class="input-group-addon"><i class="fa fa-search"></i></span>
-                <input type="text" class="form-control" placeholder="Search">
-                <span class="input-group-addon close-search"><i class="fa fa-times"></i></span>
-            </div>
-        </div>
+    <div th:replace="~{fragments::top-search}">
     </div>
     <!-- End Top Search -->
 
@@ -216,70 +80,29 @@
                         <div class="title-left">
                             <h3>Billing address</h3>
                         </div>
-                        <form class="needs-validation" novalidate>
-
-                            <div class="mb-3">
-                                <label for="username">Username *</label>
-                                <div class="input-group">
-                                    <input type="text" class="form-control" id="username" placeholder="" required>
-                                    <div class="invalid-feedback" style="width: 100%;"> Your username is required.
-                                    </div>
-                                </div>
+                        <div class="mb-3">
+                            <label for="username">Username *</label>
+                            <p th:text="${customer.username}" id="username">
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone">Phone Number *</label>
+                            <p id="phone" th:text="${customer.phoneNumber}">
+                        </div>
+                        <div class="mb-3">
+                            <label for="address">Address *</label>
+                            <p th:text="${customer.address + ' ' + customer.city + ' ' + customer.country}" id="address">
+                        </div>
+                        <hr class="mb-4">
+                        <hr class="mb-4">
+                        <div class="title"><span>Payment Methods</span></div>
+                        <div class="d-block my-3">
+                            <div class="custom-control custom-radio">
+                                <input id="debit" name="paymentMethod" type="radio" class="custom-control-input"
+                                       required>
+                                <label class="custom-control-label" for="debit">Cash</label>
                             </div>
-                            <div class="mb-3">
-                                <label for="phone">Phone Number *</label>
-                                <input type="phone" class="form-control" id="phone" placeholder="">
-                                <div class="invalid-feedback"> Please enter a valid phone number for shipping updates.
-                                </div>
-                            </div>
-                            <div class="mb-3">
-                                <label for="address">Address *</label>
-                                <input type="text" class="form-control" id="address" placeholder="" required>
-                                <div class="invalid-feedback"> Please enter your shipping address. </div>
-                            </div>
-
-                            <hr class="mb-4">
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="save-info">
-                                <label class="custom-control-label" for="save-info">Save this information for next
-                                    time</label>
-                            </div>
-                            <hr class="mb-4">
-                            <div class="title"> <span>Payment Methods</span> </div>
-                            <div class="d-block my-3">
-                                <div class="custom-control custom-radio">
-                                    <input id="credit" name="paymentMethod" type="radio" class="custom-control-input"
-                                        checked required>
-                                    <label class="custom-control-label" for="credit">Bank card</label>
-                                </div>
-                                <div class="custom-control custom-radio">
-                                    <input id="debit" name="paymentMethod" type="radio" class="custom-control-input"
-                                        required>
-                                    <label class="custom-control-label" for="debit">Cash</label>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6 mb-3">
-                                    <label for="cc-name">Name on card</label>
-                                    <input type="text" class="form-control" id="cc-name" placeholder="" required> <small
-                                        class="text-muted">Full name as displayed on card</small>
-                                    <div class="invalid-feedback"> Name on card is required </div>
-                                </div>
-                                <div class="col-md-6 mb-3">
-                                    <label for="cc-number">Card number</label>
-                                    <input type="text" class="form-control" id="cc-number" placeholder="" required>
-                                    <div class="invalid-feedback"> Credit card number is required </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6 mb-3">
-                                    <label for="cc-expiration">CVV</label>
-                                    <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
-                                    <div class="invalid-feedback"> Security code required </div>
-                                </div>
-                            </div>
-                            <hr class="mb-1">
-                        </form>
+                        </div>
+                        <hr class="mb-1">
                     </div>
                 </div>
                 <div class="col-sm-6 col-lg-6 mb-3">
@@ -289,22 +112,13 @@
                                 <h3>Shopping cart</h3>
                             </div>
                             <div class="rounded p-2 bg-light">
-                                <div class="media mb-2 border-bottom">
-                                    <div class="media-body"> <a href="product-detail.html"> Peeling Pads 2 Packs</a>
-                                        <div class="small text-muted">Price: $60.00 <span class="mx-2">|</span> Qty: 1
-                                            <span class="mx-2">|</span> Subtotal: $80.00</div>
-                                    </div>
-                                </div>
-                                <div class="media mb-2 border-bottom">
-                                    <div class="media-body"> <a href="product-detail.html"> Ultimate Glow Set</a>
-                                        <div class="small text-muted">Price: $58.00 <span class="mx-2">|</span> Qty: 1
-                                            <span class="mx-2">|</span> Subtotal: $60.00</div>
-                                    </div>
-                                </div>
-                                <div class="media mb-2">
-                                    <div class="media-body"> <a href="product-detail.html"> Face Serum</a>
-                                        <div class="small text-muted">Price: $50.00 <span class="mx-2">|</span> Qty: 1
-                                            <span class="mx-2">|</span> Subtotal: $40.00</div>
+                                <div class="media mb-2 border-bottom" th:each="item : ${cart.cartItem}">
+                                    <div class="media-body"><a href="product-detail.html"
+                                                               th:text="${item.product.name}"> </a>
+                                        <div class="small text-muted">Price: $[[${item.product.costPrice}]] <span
+                                                class="mx-2">|</span> Qty: [[${item.quantity}]] <span
+                                                class="mx-2">|</span> Subtotal: $[[${item.product.costPrice} * ${item.quantity}]]
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -322,41 +136,35 @@
                             <hr class="my-1">
                             <div class="d-flex">
                                 <h4>Sub Total</h4>
-                                <div class="ml-auto font-weight-bold"> $168</div>
+                                <div class="ml-auto font-weight-bold" th:text="${ '$' + cart.totalPrices}"></div>
                             </div>
                             <div class="d-flex">
                                 <h4>Discount</h4>
-                                <div class="ml-auto font-weight-bold"> $0 </div>
+                                <div class="ml-auto font-weight-bold"> $0</div>
                             </div>
                             <hr class="my-1">
                             <div class="d-flex">
-                                <h4>Coupon Discount</h4>
-                                <div class="ml-auto font-weight-bold"> $9 </div>
-                            </div>
-                            <div class="d-flex">
                                 <h4>Tax</h4>
-                                <div class="ml-auto font-weight-bold"> $2 </div>
+                                <div class="ml-auto font-weight-bold"> $2</div>
                             </div>
                             <div class="d-flex">
                                 <h4>Shipping Cost</h4>
-                                <div class="ml-auto font-weight-bold"> Free </div>
+                                <div class="ml-auto font-weight-bold"> Free</div>
                             </div>
                             <hr>
                             <div class="d-flex gr-total">
                                 <h5>Grand Total</h5>
-                                <div class="ml-auto h5"> $173 </div>
+                                <div class="ml-auto h5" th:text=" '$' + ${cart.totalPrices + 2}"></div>
                             </div>
                             <hr>
                         </div>
                     </div>
-                    <div class="col-12 d-flex shopping-box"> <a href="#" class="ml-auto btn hvr-hover">Place Order</a>
-                    </div>
+                    <div class="col-12 d-flex shopping-box"><a th:href="@{/order}" class="ml-auto btn hvr-hover">Place Order</a></div>
                 </div>
             </div>
         </div>
+    </div>
 
-    </div>
-    </div>
     <!-- End Cart -->
 
     <!-- Start Feed  -->
@@ -394,7 +202,7 @@
             </div>
             <div class="item">
                 <div class="ins-inner-box">
-                    <a href="index.html"><img src="images/partner1.jpg" alt="" /></a>
+                    <a href="index.html"><img src="images/partner4.jpg" alt="" /></a>
                 </div>
             </div>
         </div>
@@ -404,50 +212,7 @@
 
 
     <!-- Start Footer  -->
-    <footer>
-        <div class="footer-main">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4 col-md-12 col-sm-12">
-                        <div class="footer-top-box">
-                            <h3>Business Time</h3>
-                            <ul class="list-time">
-                                <li>Monday - Saturday: 08.00am to 09.00pm</li>
-                                <li>www.adcvietnam.com</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-12 col-sm-12">
-                        <div class="footer-top-box">
-                            <h3>Contact Us</h3>
-                            <ul class="list-time">
-                                <li><i class="fas fa-phone-square"></i> Phone number: (024).3783.5639</li>
-                                <li><i class="fas fa-envelope"></i> Email: leskin123@gmail.com</li>
-                                <li><i class="fas fa-map-marker-alt"></i> Address: 58 Tố Hữu, Thanh Xuân, Hà Nội</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-12 col-sm-12">
-                        <div class="footer-top-box">
-                            <h3>Social Media</h3>
-                            <p>Come with Leskin shop </p>
-                            <ul>
-                                <li><a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fab fa-google-plus" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fab fa-pinterest-p" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fab fa-whatsapp" aria-hidden="true"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div style="text-align: center;" class="bots">
-            <p>© 2019 Leskin. All rights reserved.</p>
-        </div>
+    <footer th:replace="~{fragments::footer}">
     </footer>
 
     <!-- ALL JS FILES -->

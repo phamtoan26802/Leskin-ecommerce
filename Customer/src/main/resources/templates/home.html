@@ -27,241 +27,251 @@
     <link rel="stylesheet" href="css/responsive.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-    <div th:replace="~{fragments::main-top}">
+<div th:replace="~{fragments::main-top}">
+</div>
+<!-- End Main Top -->
+
+<!-- Start Main Top -->
+<header th:replace="~{fragments::main-header}">
+    <!-- Start Navigation -->
+    <!-- End Navigation -->
+</header>
+<!-- End Main Top -->
+
+<!-- Start Top Search -->
+<div class="top-search">
+    <div class="container">
+        <div class="input-group">
+            <span class="input-group-addon"><i class="fa fa-search"></i></span>
+            <input type="text" class="form-control" placeholder="Search">
+            <span class="input-group-addon close-search"><i class="fa fa-times"></i></span>
+        </div>
     </div>
-    <!-- End Main Top -->
+</div>
+<!-- End Top Search -->
 
-    <!-- Start Main Top -->
-    <header th:replace="~{fragments::main-header}">
-        <!-- Start Navigation -->
-        <!-- End Navigation -->
-    </header>
-    <!-- End Main Top -->
+<!-- Start Slider -->
+<div id="slides-shop" class="cover-slides">
+    <ul class="slides-container">
+        <li class="text-center">
+            <img src="images/banner.jpg" alt="">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="m-b-20">WELCOME TO LESKIN</h1>
+                        <p class="m-b-40"></p>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="text-center">
+            <img src="images/banner-slider.jpg" alt="">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="m-b-20">
+                            WEEKLY OFFER</h1>
+                        <p class="m-b-40"></p>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="text-center">
+            <img src="images/brand-3.jpg" alt="">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="m-b-20">50% OFF EVRYTHING</h1>
+                        <p class="m-b-40"></p>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+    <div class="slides-navigation">
+        <a href="#" class="next"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+        <a href="#" class="prev"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+    </div>
+</div>
+<!-- End Slider -->
 
-    <!-- Start Top Search -->
-    <div class="top-search">
-        <div class="container">
-            <div class="input-group">
-                <span class="input-group-addon"><i class="fa fa-search"></i></span>
-                <input type="text" class="form-control" placeholder="Search">
-                <span class="input-group-addon close-search"><i class="fa fa-times"></i></span>
+
+<!-- Start About Page  -->
+<div style="padding-top: 20px;" class="about-box-main">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="banner-frame"><img class="img-fluid" src="images/detail.jpg" alt=""/>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <h2 class="noo-sh-title-top">Founded by Courtney Black</h2>
+                <p>Le Skin was founded by Courtney Black, an accomplished fitness coach and influencer from London who
+                    has built an incredible online community by helping people become the fittest, healthiest and
+                    happiest version of themselves.
+
+                    Courtney has always been passionate about skincare. Having suffered from acne and problematic skin
+                    her entire life, she has tried every product, treatment and even prescription medication. It is from
+                    these experiences Courtney understands how self-conscious and anxious, problematic skin can make one
+                    feel and how the right skincare can improve not just one’s skin but more importantly, one’s
+                    self-esteem.
+
+                    With this knowledge and passion, Courtney’s vision came to life and from there she launched her very
+                    own skincare line, Le Skin. Her philosophy is simple: a product range that people can trust with
+                    highly effective formulations and a simple skincare routine. Courtney believes that not enough
+                    people are educated about skincare, and it is her goal to ensure that Le Skin closes that gap and
+                    supports one's skin journey, no matter the stage.</p>
+                <a class="btn hvr-hover" href="#">Read More</a>
+            </div>
+        </div>
+        <div class="row my-5">
+            <div class="col-sm-6 col-lg-4">
+                <div class="service-block-inner">
+                    <h3>Our Story</h3>
+                    <p>Le Skin’s story starts with Courtney and a simple vision: to help you feel confident in your own
+                        skin. Yes, we’re a skincare brand, but we’re so much more. We set out to create a brand that
+                        offers simple and effective products designed to support your skin no matter what stage it’s
+                        in.</p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+                <div class="service-block-inner">
+                    <h3>Our Philosophy</h3>
+                    <p>Le Skin believes in the reality of real skin, it’s in our DNA. We also believe all skin is
+                        beautiful. Yes, ALL. But we also understand that it can be hard to accept our pores, dark spots,
+                        impurities and all. This is why it is our mission to help you achieve realistic skincare goals,
+                        to steadily improve your skin’s integrity and to support you on your journey to being
+                        Comfortable in Your Skin.
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+                <div class="service-block-inner">
+                    <h3>Our Ethos</h3>
+                    <p>There’s no official ‘clean’ definition, definitely not by regulation. But, there’s definitely a
+                        ‘clean’ consensus in the skincare world and we’re here for it. Le Skin is committed to
+                        fulfilling ‘clean’ expectations based on this general consensus. Our clean standard means you’ll
+                        never see ingredients we deem potentially irritative or unsafe, so here’s our list of no
+                        nos:</p>
+                </div>
             </div>
         </div>
     </div>
-    <!-- End Top Search -->
+</div>
 
-    <!-- Start Slider -->
-    <div id="slides-shop" class="cover-slides">
-        <ul class="slides-container">
-            <li class="text-center">
-                <img src="images/banner.jpg" alt="">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h1 class="m-b-20">WELCOME TO LESKIN</h1>
-                            <p class="m-b-40"></p>
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li class="text-center">
-                <img src="images/banner-slider.jpg" alt="">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h1 class="m-b-20">
-                                WEEKLY OFFER</h1>
-                            <p class="m-b-40"></p>
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li class="text-center">
-                <img src="images/brand-3.jpg" alt="">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h1 class="m-b-20">50% OFF EVRYTHING</h1>
-                            <p class="m-b-40"></p>
-                        </div>
-                    </div>
-                </div>
-            </li>
-        </ul>
-        <div class="slides-navigation">
-            <a href="#" class="next"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
-            <a href="#" class="prev"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+
+<!-- Start Feed  -->
+<div class="instagram-box">
+    <div class="main-instagram owl-carousel owl-theme">
+        <div class="item">
+            <div class="ins-inner-box">
+                <a href="index.html"><img src="images/partner1.jpg" alt=""/></a>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="images/partner4.jpg" alt=""/>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <a href="index.html"><img src="images/partner2.jpg" alt=""/></a>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <a href="index.html"><img src="images/partner3.jpg" alt=""/></a>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <a href="index.html"><img src="images/partner5.jpg" alt=""/></a>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <a href="index.html"><img src="images/partner6.jpg" alt=""/></a>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <a href="index.html"><img src="images/partner4.jpg" alt=""/></a>
+            </div>
         </div>
     </div>
-    <!-- End Slider -->
+</div>
+
+<!-- End Feed  -->
 
 
-
-    <!-- Start About Page  -->
-    <div style="padding-top: 20px;" class="about-box-main">
+<!-- Start Footer  -->
+<footer>
+    <div class="footer-main">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6">
-                    <div class="banner-frame"> <img class="img-fluid" src="images/detail.jpg" alt="" />
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                    <div class="footer-top-box">
+                        <h3>Business Time</h3>
+                        <ul class="list-time">
+                            <li>Monday - Saturday: 08.00am to 09.00pm</li>
+                            <li>www.adcvietnam.com</li>
+                        </ul>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <h2 class="noo-sh-title-top">We are <span>Leskin</span></h2>
-                    <p>Spa is our only business. Having spent many years in the spa business, we know where to find the
-                        best products.
-                        Leskin deals only with high-end processors and reliable importers. We handle quality products
-                        that
-                        we would serve to our friends and family. If it is good enough for our table, you will want it
-                        on yours!</p>
-                    <p>At Leskin, you can choose the best of both. Here, guests are invited on an adventure in great
-                        spa. We will create a great experience for you.</p>
-                    <p>Our menu is both classic and modern featuring lighter items to indulgent spa presentations like
-                        crab, shrimp, lobster,...
-                        We deliver more than just incredible spa: We create remarkable experiences.</p>
-                    <a class="btn hvr-hover" href="#">Read More</a>
-                </div>
-            </div>
-            <div class="row my-5">
-                <div class="col-sm-6 col-lg-4">
-                    <div class="service-block-inner">
-                        <h3>We are Trusted</h3>
-                        <p>Lorem Leskin deals only with high-end processors and reliable importers.
-                            We handle quality products that we would serve to our friends and family. </p>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                    <div class="footer-top-box">
+                        <h3>Contact Us</h3>
+                        <ul class="list-time">
+                            <li><i class="fas fa-phone-square"></i> Phone number: (024).3783.5639</li>
+                            <li><i class="fas fa-envelope"></i> Email: leskin123@gmail.com</li>
+                            <li><i class="fas fa-map-marker-alt"></i> Address: 58 Tố Hữu, Thanh Xuân, Hà Nội
+                            </li>
+                        </ul>
                     </div>
                 </div>
-                <div class="col-sm-6 col-lg-4">
-                    <div class="service-block-inner">
-                        <h3>We are Professional</h3>
-                        <p>Here, guests are invited on an adventure in great spa. We will create a great experience for
-                            you.
-                            We deliver more than just incredible spa: We create remarkable experiences.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-lg-4">
-                    <div class="service-block-inner">
-                        <h3>We are Expert</h3>
-                        <p>We Have spent many years in the spa business, we know where to find the best products.
-                            Our menu is both classic and modern featuring lighter items to indulgent spa presentations
-                            like crab, shrimp, lobster,... </p>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                    <div class="footer-top-box">
+                        <h3>Social Media</h3>
+                        <p>Come with Leskin shop </p>
+                        <ul>
+                            <li><a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fab fa-google-plus" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fab fa-pinterest-p" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fab fa-whatsapp" aria-hidden="true"></i></a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <div style="text-align: center;" class="bots">
+        <p>© 2019 Leskin. All rights reserved.</p>
+    </div>
+</footer>
 
-
-            <!-- Start Feed  -->
-            <div class="instagram-box">
-                <div class="main-instagram owl-carousel owl-theme">
-                    <div class="item">
-                        <div class="ins-inner-box">
-                            <a href="index.html"><img src="images/partner1.jpg" alt="" /></a>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="ins-inner-box">
-                            <img src="images/partner4.jpg" alt="" />
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="ins-inner-box">
-                            <a href="index.html"><img src="images/partner2.jpg" alt="" /></a>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="ins-inner-box">
-                            <a href="index.html"><img src="images/partner3.jpg" alt="" /></a>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="ins-inner-box">
-                            <a href="index.html"><img src="images/partner5.jpg" alt="" /></a>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="ins-inner-box">
-                            <a href="index.html"><img src="images/partner6.jpg" alt="" /></a>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="ins-inner-box">
-                            <a href="index.html"><img src="images/partner1.jpg" alt="" /></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- End Feed  -->
-
-
-            <!-- Start Footer  -->
-            <footer>
-                <div class="footer-main">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-4 col-md-12 col-sm-12">
-                                <div class="footer-top-box">
-                                    <h3>Business Time</h3>
-                                    <ul class="list-time">
-                                        <li>Monday - Saturday: 08.00am to 09.00pm</li>
-                                        <li>www.adcvietnam.com</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-12 col-sm-12">
-                                <div class="footer-top-box">
-                                    <h3>Contact Us</h3>
-                                    <ul class="list-time">
-                                        <li><i class="fas fa-phone-square"></i> Phone number: (024).3783.5639</li>
-                                        <li><i class="fas fa-envelope"></i> Email: leskin123@gmail.com</li>
-                                        <li><i class="fas fa-map-marker-alt"></i> Address: 58 Tố Hữu, Thanh Xuân, Hà Nội
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-12 col-sm-12">
-                                <div class="footer-top-box">
-                                    <h3>Social Media</h3>
-                                    <p>Come with Leskin shop </p>
-                                    <ul>
-                                        <li><a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-google-plus" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-pinterest-p" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-whatsapp" aria-hidden="true"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div style="text-align: center;" class="bots">
-                    <p>© 2019 Leskin. All rights reserved.</p>
-                </div>
-            </footer>
-
-            <!-- ALL JS FILES -->
-            <script src="js/jquery-3.2.1.min.js"></script>
-            <script src="js/popper.min.js"></script>
-            <script src="js/bootstrap.min.js"></script>
-            <!-- ALL PLUGINS -->
-            <script src="js/jquery.superslides.min.js"></script>
-            <script src="js/bootstrap-select.js"></script>
-            <script src="js/inewsticker.js"></script>
-            <script src="js/bootsnav.js."></script>
-            <script src="js/images-loded.min.js"></script>
-            <script src="js/isotope.min.js"></script>
-            <script src="js/owl.carousel.min.js"></script>
-            <script src="js/baguetteBox.min.js"></script>
-            <script src="js/form-validator.min.js"></script>
-            <script src="js/contact-form-script.js"></script>
-            <script src="js/custom.js"></script>
+<!-- ALL JS FILES -->
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!-- ALL PLUGINS -->
+<script src="js/jquery.superslides.min.js"></script>
+<script src="js/bootstrap-select.js"></script>
+<script src="js/inewsticker.js"></script>
+<script src="js/bootsnav.js."></script>
+<script src="js/images-loded.min.js"></script>
+<script src="js/isotope.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/baguetteBox.min.js"></script>
+<script src="js/form-validator.min.js"></script>
+<script src="js/contact-form-script.js"></script>
+<script src="js/custom.js"></script>
 </body>
 
 </html>

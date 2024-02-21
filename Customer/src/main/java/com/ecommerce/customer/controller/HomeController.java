@@ -1,8 +1,11 @@
 package com.ecommerce.customer.controller;
 import com.ecommerce.product.dto.ProductDto;
 import com.ecommerce.product.model.Category;
+import com.ecommerce.product.model.Customer;
 import com.ecommerce.product.model.Product;
+import com.ecommerce.product.model.ShoppingCart;
 import com.ecommerce.product.service.CategoryService;
+import com.ecommerce.product.service.CustomerService;
 import com.ecommerce.product.service.ProductService;
 import jakarta.servlet.http.HttpSession;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,10 +23,15 @@ public class HomeController {
     private ProductService productService;
     @Autowired
     private CategoryService categoryService;
+    @Autowired
+    private CustomerService customerService;
     @RequestMapping(value = {"/index", "/"}, method = RequestMethod.GET)
     public String home(Model model, Principal principal, HttpSession session){
         if(principal != null){
             session.setAttribute("username", principal.getName());
+            Customer customer = customerService.findByUsername(principal.getName());
+            ShoppingCart cart = customer.getShoppingCart();
+            session.setAttribute("totalItems", cart.getTotalItems());
         }else {
             session.removeAttribute("username");
         }
