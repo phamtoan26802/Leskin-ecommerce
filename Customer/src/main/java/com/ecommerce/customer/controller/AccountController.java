@@ -1,8 +1,6 @@
 package com.ecommerce.customer.controller;
 
-import com.ecommerce.product.model.City;
 import com.ecommerce.product.model.Customer;
-import com.ecommerce.product.service.CityService;
 import com.ecommerce.product.service.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -38,5 +36,15 @@ public class AccountController {
         Customer customerSaved = customerService.saveInfor(customer);
         attributes.addFlashAttribute("customer", customerSaved);
         return "redirect:/account";
+    }
+
+    @GetMapping("/return-login")
+    public String returnLogin(){
+        return "redirect:/login";
+    }
+
+    @GetMapping("/return-register")
+    public String returnRegister(){
+        return "redirect:/register";
     }
 }

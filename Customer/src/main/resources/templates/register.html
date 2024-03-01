@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- Mobile Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Register</title>
     <style>
         * {
@@ -26,7 +27,7 @@
             font-weight: bold;
             margin: 0;
             margin-bottom: 10px;
-            color: #006600;
+            color: #c9af48;
         }
 
         h2 {
@@ -48,11 +49,11 @@
             font-size: 10.5px;
             margin-bottom: 15px;
             margin-top: 5px;
-            color: #006600;
+            color: #c9af48;
         }
 
         a {
-            color: #006600;
+            color: #c9af48;
             font-size: 12px;
             text-decoration: none;
             margin: 15px 0;
@@ -62,8 +63,8 @@
 
         button {
             border-radius: 20px;
-            border: 1px solid #367517;
-            background-color: #367517;
+            border: 1px solid #c9af48;
+            background-color: #c9af48;
             color: #FFFFFF;
             font-size: 12px;
             font-weight: bold;
@@ -115,7 +116,7 @@
             overflow: hidden;
             width: 768px;
             max-width: 100%;
-            min-height: 480px;
+            min-height: 544px;
         }
 
         .form-container {
@@ -176,8 +177,8 @@
         }
 
         .overlay {
-            background: -webkit-linear-gradient(to right, #489620, #008C5E);
-            background: linear-gradient(to right, #008C5E, #489620);
+            background: -webkit-linear-gradient(to right, #c9af48, #e77d12);
+            background: linear-gradient(to right, #e77d12, #c9af48);
             background-repeat: no-repeat;
             background-size: cover;
             background-position: 0 0;
@@ -243,11 +244,11 @@
         }
 
         footer i {
-            color: green;
+            color: #e5b041;
         }
 
         footer a {
-            color: green;
+            color: #e5b041;
             text-decoration: none;
         }
     </style>
@@ -257,16 +258,16 @@
 <div class="container" id="container">
     <div class="form-container sign-up-container-firstpage">
         <div th:if="${error}" class="text-center alert alert-danger">
-             <p th:text="${error}"></p>
+            <p class="fa-x" style="color: #e14141;text-align: center"  th:text="${error}"></p>
         </div>
         <div th:if="${username}" class="text-center alert-warning">
-            <p th:text="${username}"></p>
+            <p class="fa-x" style="color: #e14141;text-align: center"  th:text="${username}"></p>
         </div>
         <div th:if="${password}" class="text-center alert-warning">
-            <p th:text="${password}"></p>
+            <p class="fa-x" style="color: #e14141;text-align: center"  th:text="${password}"></p>
         </div>
         <div th:if="${success}" class="text-center alert alert-success">
-            <p th:text="${success}"></p>
+            <p class="fa-check" style="color: #63E6BE;text-align: center"  th:text="${success}"></p>
         </div>
         <form th:action="@{/do-register}" method="POST" th:object="${customerDto}">
             <h1>Sign Up</h1>
@@ -287,7 +288,7 @@
         <div class="overlay">
             <div class="overlay-panel overlay-right">
                 <h2>Welcome to ...</h2>
-                <button class="ghost" id="signIn" th:href="@{/login}">Sign In</button>
+                <a style="border-radius: 20px;border: 1px solid #c9af48;background-color: #307a37;color: #FFFFFF;font-size: 12px;font-weight: bold;padding: 12px 45px;letter-spacing: 1px;text-transform: uppercase;text-decoration: none;margin-top: 20px;" id="signIn" th:href="@{/return-login}">Sign In</a>
             </div>
         </div>
     </div>
